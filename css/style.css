@@ -1,0 +1,292 @@
+body { 
+/* baground gradient kindly plundered from http://ie.microsoft.com/Testdrive/Graphics/CSSGradientBackgroundMaker/Default.html 
+and (a JavaScript color picker developed by Jan Odvarko). *\
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #FFFFFF 10%, #FAC26B 30%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #FFFFFF 10%, #FAC26B 30%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #FFFFFF 10%, #FAC26B 30%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(.1, #FFFFFF), color-stop(.3, #FAC26B));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #FFFFFF 10%, #FAC26B 30%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #FFFFFF 10%, #FAC26B 30%);
+
+
+font-family: 'Open Sans', sans-serif;
+color: #241613;
+
+    height:100%;
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+h1{
+  font-family: 'Uncial Antiqua', Cursive;
+  color: #241613;
+}
+h2{
+  color:#5f7f4c;
+}
+h3{
+  color:#fb1039;
+}
+.container {
+ height: 100%
+}
+.green{
+  color:#00ff00; 
+}
+}
+
+nav{
+ 
+}
+header{
+  margin-left:15px;
+}
+footer {
+    color:#FFFFFF;
+    text-shadow: 2px 2px 9px #000000;
+    text-align:center;
+    height: 100px;
+    width:100%;
+    background: url(https://woodyoubuyit.files.wordpress.com/2012/07/woodbackground.jpg) no-repeat center;
+    background-size:cover;
+}
+address{
+  padding-top: 42px;
+  font-weight:900;
+}
+/* DIY Grid system */
+
+.col-1 {
+  width:8.33%;
+}
+.col-2 {
+  width:16.66%;
+}
+.col-3 {
+  width:25%;
+}
+.col-4 {
+  width:33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.row {
+  display: flex; 
+  flex-wrap:wrap;
+  width: 100%;
+}
+
+.scaling{
+  max-width:100%;
+}
+
+
+ /* GT stylesheet  http://gaietytech.blogspot.com/2012/11/simple-css-vertical-menu-bar-for-blogger.html*/
+ul#cssmenu > ul, #cssmenu > ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  line-height: 1;
+}
+
+/* The container */
+#cssmenu > ul, #cssmenu > ul ul {
+  display: block;
+  position: relative;
+  
+}
+
+  /* The list elements which contain the links */
+  #cssmenu > ul li {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+    /* General link styling */
+    #cssmenu > ul li a {
+      /* Layout */
+      display: block;
+      position: relative;
+      margin: 0;
+  
+      padding: 11px 20px;
+      
+
+      /* Typography */
+      
+      color: #d8d8d8;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-shadow: 0 1px 1px #000;
+      font-size: 13px;
+      font-weight: 300;
+
+      /* Background & effects */
+      background: #282828;
+    }
+
+    /* Rounded corners for the first link of the menu/submenus */
+    #cssmenu > ul li:first-child>a {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 14px;
+      border-top: 0;
+    }
+
+    /* Rounded corners for the last link of the menu/submenus */
+    #cssmenu > ul li:last-child>a {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 14px;
+      border-bottom: 0;
+    }
+
+
+    /* The hover state of the menu/submenu links */
+    #cssmenu > ul li>a:hover, #cssmenu > ul li:hover>a {
+      color: #fff;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, .3);
+      background: #d4b800;
+      background: -webkit-linear-gradient(bottom, #d4b800, #f6d600);
+      background: -ms-linear-gradient(bottom, #d4b800, #f6d600); 
+      background: -moz-linear-gradient(bottom, #d4b800, #f6d600);
+      background: -o-linear-gradient(bottom, #d4b800, #f6d600);
+      border-color: transparent;
+    }
+
+#cssmenu > ul li>a.active, #cssmenu > ul li.active>a {
+  background: #FF0000;
+}
+.holder{
+  position:relative;
+  margin:15px;
+  padding:15px;
+}
+
+.transparent_back{
+  position:absolute;
+  left:0;
+  right:0;
+  top: 0;
+  bottom:0;
+  background-color: #ffffff;
+  opacity:.5;
+  border-radius:10px;
+
+}
+.inner_opaque{
+  position: relative;
+  z-index: 1
+}
+/* http://learnwebcode.com/tutorial-files/css-column-layout-tutorial/clearfix.txt */
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/* @end */
+
+.pull-left{
+  float:left;
+}
+.pull-right{
+  float:right;
+}
+.pip{
+  margin:5px;
+}
+
+/* Mobile----------- */
+@media only screen and (max-width : 650px) and (min-width : 320px) {
+   h1 {
+    /*color:#fff000;/* for debugging */
+    
+    } 
+  body{font-size:80%}
+
+  #cssmenu > ul li a {
+    padding: 10px 20px 10px 1px;
+    font-size:60%;
+    }
+}
+
+/* Super tiny-------*/
+@media only screen and (max-width : 319px){
+   body{font-size:60%;
+  background-image: -ms-linear-gradient(top, #FFFFFF 9%, #FAC26B 10%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top, #FFFFFF 9%, #FAC26B 10%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top, #FFFFFF 9%, #FAC26B 10%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(.09, #FFFFFF), color-stop(.1, #FAC26B));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top, #FFFFFF 9%, #FAC26B 10%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom, #FFFFFF 9%, #FAC26B 10%);
+   } 
+   .vanish{
+    display: none !important;
+   }
+
+    .col-2{width:100% !important}
+   }
+
+.videoshell{
+  position: relative;
+  padding-bottom:56.25%;
+  padding-top:25px;
+  height:100%;
+}
+.videoshell iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}

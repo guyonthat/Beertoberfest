@@ -38,9 +38,7 @@ h3 {
 .container {
     height: 100%
 }
-.green {
-    color: #00ff00;
-}
+
 }
 nav {} header {
     margin-left: 15px;
@@ -57,7 +55,7 @@ footer {
 }
 address {
     padding-top: 42px;
-    font-weight: 900;
+    
 }
 /* DIY Grid system */
 
